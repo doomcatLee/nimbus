@@ -33,9 +33,20 @@ public class App {
       String userAddress = request.queryParams("userAddress");
       User newUser = new User(userAdmin, userPassword, userName, userEmail, userBirthday, userAddress);
       newUser.save();
-      model.put("template", "templates/index.vtl");
-      model.put("edit-user", "templates/edit-user.vtl");
-      model.put("new-user", newUser);
+      String adminUrl = String.format("/admin-backend/%d", newUser.userId());
+      String userUrl = String.format("/user-backend/", newUser.userId());
+      if(userAdmin){
+        response.redirect(adminUrl);
+      } else {
+        response.redirect(userUrl);
+      }
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    get("/admin-backend", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      User findUser = User.find(Integer.parseInt(request.params("id")));
+      model.put("template", "templates/backend.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 

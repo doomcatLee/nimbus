@@ -55,15 +55,15 @@ public class User {
   //   }
   // }
 
-  // public static User find(int userId){
-  //   try(Connection con = DB.sql2o.open()) {
-  //     String sql = "SELECT * FROM users WHERE user_id = :userId";
-  //     return con.createQuery(sql)
-  //       .addParameter("userId", userId)
-  //       .executeUpdate()
-  //       .getKey();
-  //   }
-  // }
+  public static User find(int userId){
+    try(Connection con = DB.sql2o.open()) {
+      String sql = "SELECT * FROM users WHERE user_id = :userId";
+      return con.createQuery(sql)
+        .addParameter("userId", userId)
+        .executeUpdate()
+        .getKey();
+    }
+  }
 
   public int userId(){
     return user_id;
