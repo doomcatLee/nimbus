@@ -1,0 +1,8 @@
+<main class="container">
+  <h1>Admin</h1>
+  #if($credentials)
+    #parse($backend)
+  #else
+    #parse($admin-login)
+  #end
+</main>
