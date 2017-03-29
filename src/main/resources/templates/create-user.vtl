@@ -1,5 +1,5 @@
-<div>
-  <form>
+<div id="create-user">
+  <form action="/create-user" method="POST">
     <h1>Join!</h1>
     <div class="input-group">
       <input class="form-control" type="text" name="userName" placeholder="Full Name">
@@ -7,6 +7,21 @@
     <div class="input-group">
       <input class="form-control" type="text" name="userEmail" placeholder="Email">
     </div>
-    <input type="submit">
+    <div class="input-group">
+      <input class="form-control" type="text" name="userBirthday" placeholder="Birthday">
+    </div>
+    <div class="input-group">
+      <input class="form-control" type="text" name="userAddress" placeholder="Address">
+    </div>
+    <div class="input-group">
+      <input class="form-control" type="password" name="userPassword" placeholder="Password">
+    </div>
+    <div class="input-group">
+      <select name="userAdmin">
+        <option value="true">Admin</option>
+        <option value="false" default>User</option>
+      </select>
+    </div>
+    <input class="btn" type="submit">
   </form>
 </div>

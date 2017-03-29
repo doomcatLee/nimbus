@@ -25,12 +25,13 @@ public class App {
 
     post("/create-user", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
+      Boolean userAdmin = Boolean.parseBoolean(request.queryParams("userAdmin"));
       String userPassword = request.queryParams("userPassword");
       String userName = request.queryParams("userName");
       String userEmail = request.queryParams("userEmail");
       String userBirthday = request.queryParams("userBirthday");
       String userAddress = request.queryParams("userAddress");
-      User newUser = new User(userPassword, userName, userEmail, userBirthday, userAddress);
+      User newUser = new User(userAdmin, userPassword, userName, userEmail, userBirthday, userAddress);
       newUser.save();
       model.put("template", "templates/index.vtl");
       model.put("edit-user", "templates/edit-user.vtl");

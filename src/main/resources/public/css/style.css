@@ -3,7 +3,10 @@ h1, h2, h3, h4, h5, h6 {padding:0;margin:0;}
 
 .clear:after, .clear:before {content:"";clear:both;display:block;}
 
-#create-user {width:50%;margin:auto;padding:1% 3%;border-radius: 10px;margin-top:100px;background-color:#ddd;}
+#create-user {width:50%;margin:auto;padding:1% 3% 4%;border-radius: 10px;margin-top:100px;background-color:#ddd;}
+#create-user form {text-align: center;}
 #create-user form > h1 {text-align: center;margin-bottom:3%;}
 #create-user .input-group {float:left;width:48%;margin:0 1% 2% 1%;border-radius: 4px;}
 #create-user .input-group .form-control {border-radius:4px;}
+#create-user .input-group select {width:100%;height:34px;}
+#create-user input[type="submit"] {width:98%;background-color:#8cf;margin:auto;text-transform:uppercase;}
