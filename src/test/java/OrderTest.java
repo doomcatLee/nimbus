@@ -27,4 +27,33 @@ public class OrderTest{
     Order order = new Order(1, 10);
     assertTrue(order.returnItems() instanceof List<?>);
   }
+
+  @Test
+  public void test_getters(){
+    Order order = new Order(5,4);
+    assertEquals(5, order.getInvoice());
+    assertEquals(4, order.getTotalPrice());
+  }
+
+  @Test
+  public void check_if_save_works(){
+    Order order = new Order(5,4);
+    order.save();
+    assertEquals(true, order.all().get(0) instanceof Order);
+  }
+
+  @Test
+  public void check_if_all_works(){
+    Order order = new Order(5,4);
+    order.save();
+    assertTrue(order.all() instanceof List<?>);
+  }
+
+  @Test
+  public void check_if_find_works(){
+    Order order = new Order(5,4);
+    order.save();
+    assertTrue(order.find(order.getId()) instanceof Order);
+  }
+
 }
