@@ -33,8 +33,8 @@ public class App {
       String userAddress = request.queryParams("userAddress");
       User newUser = new User(userAdmin, userPassword, userName, userEmail, userBirthday, userAddress);
       newUser.save();
-      String adminUrl = String.format("/admin-backend/%d", newUser.userId());
-      String userUrl = String.format("/user-backend/", newUser.userId());
+      String adminUrl = String.format("/admin-backend/%d", newUser.getUserId());
+      String userUrl = String.format("/user-backend/", newUser.getUserId());
       if(userAdmin){
         response.redirect(adminUrl);
       } else {

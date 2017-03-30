@@ -5,6 +5,8 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 import org.sql2o.*;
 
+                      //USERID NEEDS TO BE CHANGEeD TO "ID" for convetion"
+
 public class User {
   private int           user_id;
   private Boolean       user_admin;
@@ -25,6 +27,13 @@ public class User {
     this.user_date_created = new SimpleDateFormat("MM-dd-yyyy").format(makeDate);
     this.user_birthday = user_birthday;
     this.user_address = user_address;
+  }
+
+  public static List<User> all() {
+    String sql = "SELECT * FROM Users";
+    try(Connection con = DB.sql2o.open()) {
+      return con.createQuery(sql).executeAndFetch(User.class);
+    }
   }
 
   public void save(){
@@ -64,7 +73,7 @@ public class User {
     }
   }
 
-  public int userId(){
+  public int getUserId(){
     return user_id;
   }
   public String userName(){
