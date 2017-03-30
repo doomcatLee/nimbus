@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-03-30T14:17:16" hostname="Alexs-MacBook.local" time="0.07">
+<testsuite name="UserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-03-30T14:26:02" hostname="Alexs-MacBook.local" time="0.071">
   <properties/>
   <testcase name="find_works" classname="UserTest" time="0.032"/>
   <testcase name="getId_tasksInstantiateWithAnID" classname="UserTest" time="0.008"/>
-  <testcase name="save_works" classname="UserTest" time="0.028"/>
+  <testcase name="save_works" classname="UserTest" time="0.029"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

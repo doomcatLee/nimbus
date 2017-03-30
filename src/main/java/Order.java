@@ -11,14 +11,14 @@ public class Order{
   private int id;
   private int invoice;
   private int total_price;
-    private String user_date_created;
+  private String date_created;
   List<String> cart = new ArrayList<String>();
 
   public Order(int invoice, int total_price){
     this.invoice = invoice;
     this.total_price = total_price;
     Date makeDate = new Date();
-    this.user_date_created = new SimpleDateFormat("MM-dd-yyyy").format(makeDate);
+    this.date_created = new SimpleDateFormat("MM-dd-yyyy").format(makeDate);
   }
 
   public int getInvoice(){
@@ -49,7 +49,7 @@ public class Order{
 
 
   public static List<Order> all() {
-    String sql = "SELECT id, invoice, total_price FROM orders";
+    String sql = "SELECT id, invoice, total_price, date_created FROM orders";
     try(Connection con = DB.sql2o.open()) {
       return con.createQuery(sql).executeAndFetch(Order.class);
     }
@@ -57,10 +57,11 @@ public class Order{
 
   public void save() {
     try(Connection con = DB.sql2o.open()) {
-      String sql = "INSERT INTO orders(invoice, total_price) VALUES (:invoice, :total_price)";
+      String sql = "INSERT INTO orders(invoice, total_price, date_created) VALUES (:invoice, :total_price, :date_created)";
       this.id = (int) con.createQuery(sql, true)
         .addParameter("invoice", this.invoice)
         .addParameter("total_price", this.total_price)
+        .addParameter("date_created",  this.date_created)
         .executeUpdate()
         .getKey();
     }
