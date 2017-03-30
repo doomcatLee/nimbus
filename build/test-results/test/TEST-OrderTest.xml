@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-30T04:05:11" hostname="Alexs-MacBook.local" time="0.002">
+<testsuite name="OrderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-03-30T04:22:55" hostname="Alexs-MacBook.local" time="0.168">
   <properties/>
-  <testcase name="Order_instantiates_correctly" classname="OrderTest" time="0.002"/>
+  <testcase name="addItem_works" classname="OrderTest" time="0.149"/>
+  <testcase name="returnItems_work" classname="OrderTest" time="0.01"/>
+  <testcase name="Order_instantiates_correctly" classname="OrderTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

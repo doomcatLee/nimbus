@@ -22,14 +22,19 @@ public class Order{
     return total_price;
   }
 
+  public List<String> returnItems(){
+    return cart;
+  }
+
   public void addItem(String input){
     cart.add(input);
   }
 
-  @Override
   public String toString(){
     return "hello";
   }
+
+
 
 
 }

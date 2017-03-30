@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-03-30T04:05:11" hostname="Alexs-MacBook.local" time="0.187">
+<testsuite name="UserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-30T04:22:55" hostname="Alexs-MacBook.local" time="0.009">
   <properties/>
-  <testcase name="test_for_save_method" classname="UserTest" time="0.176"/>
-  <testcase name="getId_tasksInstantiateWithAnID" classname="UserTest" time="0.011"/>
+  <testcase name="getId_tasksInstantiateWithAnID" classname="UserTest" time="0.009"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
