@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-03-30T14:33:30" hostname="Alexs-MacBook.local" time="0.082">
+<testsuite name="UserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-03-30T14:46:31" hostname="Alexs-MacBook.local" time="0.077">
   <properties/>
-  <testcase name="find_works" classname="UserTest" time="0.034"/>
-  <testcase name="getId_tasksInstantiateWithAnID" classname="UserTest" time="0.011"/>
-  <testcase name="test_all_the_getters" classname="UserTest" time="0.009"/>
-  <testcase name="save_works" classname="UserTest" time="0.026"/>
+  <testcase name="find_works" classname="UserTest" time="0.029"/>
+  <testcase name="getId_tasksInstantiateWithAnID" classname="UserTest" time="0.008"/>
+  <testcase name="test_all_the_getters" classname="UserTest" time="0.012"/>
+  <testcase name="save_works" classname="UserTest" time="0.027"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -5,7 +5,7 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 import org.sql2o.*;
 
-                      //USERID NEEDS TO BE CHANGEeD TO "ID" for convetion"
+                      //USERID NEEDS TO BE CHANGEeD TO "ID" for convention"
 
 public class User {
   private int           user_id;
@@ -49,6 +49,10 @@ public class User {
 
   public String getUserAddress(){
     return user_address;
+  }
+
+  public String getDateCreated(){
+    return user_date_created;
   }
 
   public boolean isAdmin(){

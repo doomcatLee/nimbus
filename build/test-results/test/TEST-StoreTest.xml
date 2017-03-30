@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StoreTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-03-30T14:46:31" hostname="Alexs-MacBook.local" time="0.05">
+  <properties/>
+  <testcase name="store_instantiates_correctly" classname="StoreTest" time="0.011"/>
+  <testcase name="save_method_works" classname="StoreTest" time="0.03"/>
+  <testcase name="store_getters_work" classname="StoreTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

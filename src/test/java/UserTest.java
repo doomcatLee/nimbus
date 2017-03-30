@@ -25,9 +25,10 @@ public class UserTest {
     assertEquals("email", newUser.getUserEmail());
     assertEquals("01-19-1988", newUser.getUserBirthday());
     assertEquals("1234 street", newUser.getUserAddress());
+    assertTrue(newUser.getDateCreated() instanceof String);
   }
 
-  
+
 
   @Test
   public void save_works(){
