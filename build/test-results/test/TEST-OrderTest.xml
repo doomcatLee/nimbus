@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-03-30T14:26:02" hostname="Alexs-MacBook.local" time="0.341">
+<testsuite name="OrderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-03-30T14:33:30" hostname="Alexs-MacBook.local" time="0.333">
   <properties/>
-  <testcase name="addItem_works" classname="OrderTest" time="0.167"/>
-  <testcase name="check_if_all_works" classname="OrderTest" time="0.08"/>
-  <testcase name="test_getters" classname="OrderTest" time="0.011"/>
-  <testcase name="returnItems_work" classname="OrderTest" time="0.013"/>
-  <testcase name="check_if_find_works" classname="OrderTest" time="0.028"/>
-  <testcase name="check_if_save_works" classname="OrderTest" time="0.03"/>
-  <testcase name="Order_instantiates_correctly" classname="OrderTest" time="0.009"/>
+  <testcase name="addItem_works" classname="OrderTest" time="0.149"/>
+  <testcase name="check_if_all_works" classname="OrderTest" time="0.086"/>
+  <testcase name="test_getters" classname="OrderTest" time="0.013"/>
+  <testcase name="returnItems_work" classname="OrderTest" time="0.012"/>
+  <testcase name="check_if_find_works" classname="OrderTest" time="0.027"/>
+  <testcase name="check_if_save_works" classname="OrderTest" time="0.031"/>
+  <testcase name="Order_instantiates_correctly" classname="OrderTest" time="0.011"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

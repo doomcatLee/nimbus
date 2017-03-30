@@ -17,6 +17,19 @@ public class UserTest {
   }
 
   @Test
+  public void test_all_the_getters(){
+    User newUser = new User(true, "password","keith", "email", "01-19-1988", "1234 street");
+    assertEquals(true, newUser.isAdmin());
+    assertEquals("password", newUser.getUserPassword());
+    assertEquals("keith", newUser.getUserName());
+    assertEquals("email", newUser.getUserEmail());
+    assertEquals("01-19-1988", newUser.getUserBirthday());
+    assertEquals("1234 street", newUser.getUserAddress());
+  }
+
+  
+
+  @Test
   public void save_works(){
     User newUser = new User(true, "password","keith", "email", "01-19-1988", "1234 street");
     newUser.save();

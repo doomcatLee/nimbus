@@ -29,6 +29,36 @@ public class User {
     this.user_address = user_address;
   }
 
+  public int getUserId(){
+    return user_id;
+  }
+  public String getUserName(){
+    return user_fullname;
+  }
+  public String getUserBirthday(){
+    return user_birthday;
+  }
+
+  public String getUserPassword(){
+    return user_password;
+  }
+
+  public String getUserEmail(){
+    return user_email;
+  }
+
+  public String getUserAddress(){
+    return user_address;
+  }
+
+  public boolean isAdmin(){
+    if (user_admin == true){
+      return true;
+    }else
+    return false;
+  }
+
+
   public static List<User> all() {
     String sql = "SELECT * FROM Users";
     try(Connection con = DB.sql2o.open()) {
@@ -73,13 +103,4 @@ public class User {
     }
   }
 
-  public int getUserId(){
-    return user_id;
-  }
-  public String userName(){
-    return user_fullname;
-  }
-  public String userBirthday(){
-    return user_birthday;
-  }
 }
