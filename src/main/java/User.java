@@ -60,8 +60,7 @@ public class User {
       String sql = "SELECT * FROM users WHERE user_id = :userId";
       return con.createQuery(sql)
         .addParameter("userId", userId)
-        .executeUpdate()
-        .getKey();
+        .executeAndFetchFirst(User.class);
     }
   }
 

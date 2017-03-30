@@ -7,8 +7,7 @@ public class UserTest {
 
   @Test
   public void getId_tasksInstantiateWithAnID() {
-    User newUser = new User("keith", "email", "01-19-1988", "1234 street");
-    newUser.save();
-    assertTrue(newUser.userId() > 0);
+    User newUser = new User(true, "password","keith", "email", "01-19-1988", "1234 street");
+    assertTrue(newUser instanceof User);
   }
 }

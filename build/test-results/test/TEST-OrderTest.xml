@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-30T03:57:04" hostname="Alexs-MacBook.local" time="0.003">
+  <properties/>
+  <testcase name="Order_instantiates_correctly" classname="OrderTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
